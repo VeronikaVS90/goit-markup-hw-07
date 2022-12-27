@@ -333,7 +333,7 @@ img {
 }
 
 /* Activity */
-.section-title {
+.section__title {
   margin: 0 auto 50px;
 
   color: var(--title-text-color);
@@ -344,15 +344,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.pic-list.container .activity-item + .activity-item {
-  margin-left: 30px;
+.pic-list {
+  display: flex;
 }
 
-.activity-item {
+.pic-list__item {
+  margin-right: 30px;
   position: relative;
 }
 
-.activity-thumb {
+.pic-list__item:last-child {
+  margin-right: 0;
+}
+
+.pic-list__thumb {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -363,7 +368,7 @@ img {
   background-color: var(--action-thumb-color);
 }
 
-.activity-name {
+.pic-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
