@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  background-color: var(--white-color);
-  color: var(--primary-text-color);
+  background-color: #ffffff;
+  color: #757575;
   font-family: Roboto, sans-serif;
 }
 

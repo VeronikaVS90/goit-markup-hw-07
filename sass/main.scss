@@ -1,6 +1,8 @@
 @import './utils/variables';
 @import './base/base';
 @import './base/reset';
-@import './layout/container';
 @import './utils/mixins';
+
 @import './components/button';
+@import './layout/container';
+@import './layout/header';
