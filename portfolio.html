@@ -266,30 +266,35 @@
     <footer class="footer">
       <div class="common container">
         <div class="footer-container">
-          <a lang="en" href="./index.html" class="logo"
-            >Web<span class="footer-logo">Studio</span></a
+          <a lang="en" href="./index.html" class="logo footer__logo"
+            >Web<span class="footer__logo footer--secondary">Studio</span></a
           >
 
-          <address>
-            <ul class="address-nav">
-              <li class="item">
+          <address class="address">
+            <ul class="address__nav">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/cnvM98otR7dQ5Kq79"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="link-primary"
+                  class="address__link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
 
-              <li class="item">
-                <a lang="en" href="mailto:info@devstudio.com" class="link-secondary"
+              <li class="address__item">
+                <a
+                  lang="en"
+                  href="mailto:info@devstudio.com"
+                  class="address__link address__link--secondary"
                   >info@devstudio.com</a
                 >
               </li>
 
-              <li class="item">
-                <a href="tel:+380961111111" class="link-secondary">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link address__link--secondary"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -297,28 +302,32 @@
 
         <div class="footer-thumb">
           <p class="footer-join">приєднуйтесь</p>
-          <ul class="join-list">
-            <li class="footer-item">
-              <a href="#" class="footer-networks"
-                ><svg class="footer-icon"><use href="./images/icons.svg#icon-instagram"></use></svg
+
+          <ul class="networks footer-thumb__networks">
+            <li class="networks__item">
+              <a href="#" class="networks__link networks__link--secondary"
+                ><svg class="networks__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
 
-            <li class="footer-item">
-              <a href="#" class="footer-networks"
-                ><svg class="footer-icon"><use href="./images/icons.svg#icon-twitter"></use></svg
+            <li class="networks__item">
+              <a href="#" class="networks__link networks__link--secondary"
+                ><svg class="networks__icon"><use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
 
-            <li class="footer-item">
-              <a href="#" class="footer-networks"
-                ><svg class="footer-icon"><use href="./images/icons.svg#icon-facebook"></use></svg
+            <li class="networks__item">
+              <a href="#" class="networks__link networks__link--secondary"
+                ><svg class="networks__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
 
-            <li class="footer-item">
-              <a href="#" class="footer-networks"
-                ><svg class="footer-icon"><use href="./images/icons.svg#icon-linkedin"></use></svg
+            <li class="networks__item">
+              <a href="#" class="networks__link networks__link--secondary"
+                ><svg class="networks__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
@@ -327,10 +336,10 @@
         <div class="footer-thumb">
           <p class="footer-join">Підпишіться на розсилку</p>
 
-          <form class="footer-form">
-            <label class="footer-label" for="mail"></label>
+          <form class="footer-form" autocomplete="on">
+            <label class="footer-form__label" for="mail"></label>
             <input
-              class="footer-input"
+              class="footer-form__input"
               type="email"
               name="mail"
               id="mail"
@@ -338,9 +347,9 @@
               required
             />
 
-            <button class="follow button-primary" type="submit">
+            <button class="button footer-form__button" type="submit">
               Підписатися
-              <svg class="icon-send"><use href="./images/icons.svg#icon-send"></use></svg>
+              <svg class="footer-form__icon"><use href="./images/icons.svg#icon-send"></use></svg>
             </button>
           </form>
         </div>
