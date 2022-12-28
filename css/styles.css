@@ -654,16 +654,21 @@ img {
 /* Стилі для portfolio.html */
 /* Button в portfolio */
 
-.filter-list.container {
+.filter-list {
+  display: flex;
   justify-content: center;
   margin: 0 auto 50px;
 }
 
-.filter-list.container .item + .item {
-  margin-left: 8px;
+.filter-list__item {
+  margin-right: 8px;
 }
 
-.button-secondary {
+.filter-list__item:last-child {
+  margin-right: 0;
+}
+
+.filter-list__button {
   border-radius: 4px;
   padding: 6px 22px;
   border: transparent;
@@ -682,8 +687,8 @@ img {
     box-shadow 250ms var(--timing-function);
 }
 
-.button-secondary:hover,
-.button-secondary:focus {
+.filter-list__button:hover,
+.filter-list__button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: var(--secondary-btn-shadow);
