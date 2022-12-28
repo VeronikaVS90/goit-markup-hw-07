@@ -233,6 +233,10 @@ img {
   text-transform: uppercase;
 }
 
+.hero__button {
+  padding: 10px 32px;
+}
+
 /* Button */
 .button {
   border-radius: 4px;
@@ -251,10 +255,6 @@ img {
   font-family: inherit;
 
   transition: background-color 250ms var(--timing-function);
-}
-
-.hero__button {
-  padding: 10px 32px;
 }
 
 .button:hover,
