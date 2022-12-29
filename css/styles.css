@@ -427,6 +427,7 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* Networks */
 .networks {
   display: flex;
   justify-content: center;
@@ -652,7 +653,6 @@ img {
 }
 
 /* Стилі для portfolio.html */
-/* Button в portfolio */
 
 .filter-list {
   display: flex;
